@@ -1,0 +1,141 @@
+.hero-container {
+  width: 100%;
+  height: 716.83px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: block;
+  
+  object-fit: cover; 
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.hero-text {
+  max-width: 648px;
+  padding: 40px;
+  background-color: #FFF9F3;
+  border-radius: 0;
+  margin-right: 0;
+}
+
+.new-arrival {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  color: #B88E2F;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+.buy-now-btn {
+  background-color: #B88E2F;
+  color: white;
+  border: none;
+  padding: 16px 72px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.buy-now-btn:hover {
+  background-color: #9a7626;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 600px;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+    margin-right: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  
+  .buy-now-btn {
+    padding: 14px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 500px;
+  }
+
+  .hero-content {
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    padding: 30px;
+    max-width: 100%;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+  }
+  
+  .buy-now-btn {
+    padding: 12px 36px;
+    font-size: 14px;
+  }
+}
