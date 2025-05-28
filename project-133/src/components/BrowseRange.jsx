@@ -10,12 +10,12 @@ const categories = [
   {
     id: 2,
     name: 'Living',
-    image: '/images/living.jpg',
+    image: 'living.png',
   },
   {
     id: 3,
     name: 'Bedroom',
-    image: '/images/bedroom.jpg',
+    image: 'bedroom.png',
   }
 ];
 

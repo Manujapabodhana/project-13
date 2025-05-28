@@ -5,6 +5,7 @@ import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import Products from './components/Products';
 import BrowseRange from './components/BrowseRange';
+import RoomInspiration from './components/Roomlnspiration';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Hero />
       <Products />
       <BrowseRange></BrowseRange>
+      <RoomInspiration></RoomInspiration>
       <ProductList />
       <Footer />
     </div>
