@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   background-color: white;
-  padding: 15px 0;
+  padding: 25px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
@@ -11,9 +11,14 @@
 .header-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
   align-items: center;
 }
 
@@ -26,7 +31,8 @@
 
 .main-nav {
   display: flex;
-  gap: 45px;
+  gap: 75px;
+  margin: 0 60px;
 }
 
 .nav-link {
@@ -35,15 +41,32 @@
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 5px 0;
+  position: relative;
 }
 
 .nav-link:hover {
   color: #B88E2F;
 }
 
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #B88E2F;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 .header-actions {
   display: flex;
-  gap: 25px;
+  gap: 45px;
   align-items: center;
 }
 
@@ -67,17 +90,28 @@
   color: #000;
 }
 
+@media (max-width: 1024px) {
+  .main-nav {
+    gap: 45px;
+    margin: 0 30px;
+  }
+  
+  .header-actions {
+    gap: 25px;
+  }
+}
+
 @media (max-width: 768px) {
+  .header-content {
+    padding: 0 20px;
+  }
+
   .main-nav {
     display: none;
   }
   
   .header-actions {
-    gap: 15px;
-  }
-  
-  .icon-button {
-    padding: 6px;
+    gap: 20px;
   }
   
   .nav-icon {
