@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Products from './components/Products';
 import BrowseRange from './components/BrowseRange';
 import RoomInspiration from './components/Roomlnspiration';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Products />
       <BrowseRange></BrowseRange>
       <RoomInspiration></RoomInspiration>
+      <Testimonials />
       <ProductList />
       <Footer />
     </div>

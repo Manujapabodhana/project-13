@@ -14,7 +14,7 @@ const rooms = [
     number: '02',
     type: 'Living Room',
     title: 'Modern Space',
-    image: '/images/room-2.jpg',
+    image: 'room-2.png',
   },
   {
     id: 3,
