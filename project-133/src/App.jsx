@@ -19,7 +19,7 @@ const App = () => {
       <RoomInspiration></RoomInspiration>
       <Testimonials />
       <ProductList />
-      <Footer />
+      
     </div>
   );
 };
