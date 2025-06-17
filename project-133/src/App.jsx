@@ -5,7 +5,7 @@ import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import Products from './components/Products';
 import BrowseRange from './components/BrowseRange';
-import RoomInspiration from './components/Roomlnspiration';
+import Roomlnspiration from './components/Roomlnspiration';
 import Testimonials from './components/Testimonials';
 
 const App = () => {
@@ -16,10 +16,10 @@ const App = () => {
       <Hero />
       <Products />
       <BrowseRange></BrowseRange>
-      <RoomInspiration></RoomInspiration>
+      <Roomlnspiration></Roomlnspiration>
       <Testimonials />
       <ProductList />
-      
+      <Footer />
     </div>
   );
 };
